@@ -21,9 +21,7 @@
 - Persist
 - - Persistent Content
 
-### Cascade
-### Orphan
-### Fetch Type
+### Cascade | Orphan | Fetch Type
 ### N+1 Optimization
 - Ways to optimize
 - - writing custom sql query with joins
