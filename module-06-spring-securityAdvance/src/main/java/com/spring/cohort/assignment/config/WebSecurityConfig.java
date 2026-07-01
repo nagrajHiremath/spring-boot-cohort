@@ -40,7 +40,7 @@ public class WebSecurityConfig {
                 .build();
     }
 
-        @Bean
+    @Bean
     AuthenticationManager authenticationManager(AuthenticationConfiguration authenticationConfiguration){
         return authenticationConfiguration.getAuthenticationManager();
     }
