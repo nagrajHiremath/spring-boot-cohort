@@ -1,0 +1,15 @@
+services:
+  ai-postgres:
+    image: pgvector/pgvector:pg16   # Pre-bundled with pgvector extension
+    container_name: spring-ai-pgvector
+    environment:
+      POSTGRES_DB: pgvector_db_test
+      POSTGRES_USER: pgvector
+      POSTGRES_PASSWORD: password
+    ports:
+      - "5433:5432"                 # Exposes 5433 to the host machine to avoid conflict
+    volumes:
+      - ai_pgdata:/var/lib/postgresql/data
+
+volumes:
+  ai_pgdata:
