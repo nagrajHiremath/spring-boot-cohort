@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: assignment
+
+  datasource:
+    # Memory database configuration that persists as long as the app runs
+    url: jdbc:h2:mem:testdb
+    driver-class-name: org.h2.Driver
+    username: sa
+    password:
+
+logging:
+  level:
+    root: INFO
+    # Force your project packages to output debug/info logs
+    com.spring.cohort.assignment: DEBUG
